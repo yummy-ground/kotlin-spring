@@ -1,0 +1,13 @@
+spring.devtools.restart.enabled: false
+spring.devtools.livereload.enabled: false
+---
+spring.config.activate.on-profile: local
+spring:
+  devtools:
+    restart:
+      enabled: true
+      log-condition-evaluation-delta: false
+      trigger-file: .restartTriggerFile
+      additional-exclude: templates/**,application-dev.yml,env/dev.env
+    livereload:
+      enabled: true

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: simple-kotlin-dev
+  config:
+    activate:
+      on-profile: dev
+---
+spring:
+  application:
+    name: simple-kotlin-local
+  config:
+    import:
+      - classpath:devtools.yml
+    activate:
+      on-profile: local
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  thymeleaf:
+    enabled: false
