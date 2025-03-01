@@ -30,6 +30,10 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin") // kotlin default init
 	implementation("org.jetbrains.kotlin:kotlin-reflect") // kotlin default init
 
+	// Database
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.liquibase:liquibase-core") // Schema Migration
+
 	// Only on Development - DevTools
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 
